@@ -89,6 +89,87 @@ Robot ini didesain untuk **memaksimalkan profit dan mengurangi risiko** dengan f
 
 ---
 
+Berikut adalah library yang perlu diinstal untuk menjalankan robot trading **XAUUSD otomatis** di MetaTrader 5:  
+
+---
+
+### **1️⃣ MetaTrader 5 API**  
+📌 **Library:** `MetaTrader5`  
+✅ **Fungsi:**  
+- Menghubungkan Python dengan MetaTrader 5  
+- Mengambil data candlestick real-time  
+- Mengeksekusi order (Buy/Sell)  
+- Mengelola Stop Loss, Take Profit, dan Trailing Stop  
+
+**Instalasi:**  
+```bash
+pip install MetaTrader5
+```
+
+---
+
+### **2️⃣ Analisis Data & Indikator Teknikal**  
+📌 **Library:** `pandas`, `numpy`, `ta`  
+✅ **Fungsi:**  
+- **`pandas`** → Mengelola data candlestick dalam format DataFrame  
+- **`numpy`** → Perhitungan matematis untuk ATR, ADX, RSI, dll.  
+- **`ta`** (Technical Analysis) → Menghitung indikator seperti **RSI, ADX, ATR, OBV**  
+
+**Instalasi:**  
+```bash
+pip install pandas numpy ta
+```
+
+---
+
+### **3️⃣ Machine Learning (Opsional, untuk Prediksi Tren)**  
+📌 **Library:** `scikit-learn`, `joblib`  
+✅ **Fungsi:**  
+- **`scikit-learn`** → Melatih model AI untuk memprediksi tren harga  
+- **`joblib`** → Menyimpan & memuat model AI agar tidak perlu retraining setiap kali bot dijalankan  
+
+**Instalasi:**  
+```bash
+pip install scikit-learn joblib
+```
+
+---
+
+### **4️⃣ Notifikasi ke Telegram (Opsional, untuk Monitoring Jarak Jauh)**  
+📌 **Library:** `python-telegram-bot`  
+✅ **Fungsi:**  
+- Mengirim pesan otomatis ke Telegram saat bot membuka atau menutup order  
+
+**Instalasi:**  
+```bash
+pip install python-telegram-bot
+```
+
+---
+
+### **5️⃣ Logging & Debugging**  
+📌 **Library:** `logging`  
+✅ **Fungsi:**  
+- Mencatat semua aktivitas bot (entry, exit, error) dalam file log  
+
+**Instalasi:**  
+```bash
+pip install logging
+```
+*(Biasanya sudah termasuk dalam Python bawaan.)*  
+
+---
+
+### **Instal Semua Sekaligus**  
+Jika ingin menginstal semuanya langsung, gunakan:  
+```bash
+pip install MetaTrader5 pandas numpy ta scikit-learn joblib python-telegram-bot logging
+```
+
+---
+
+Setelah instalasi selesai, Anda bisa langsung menjalankan **robot trading XAUUSD otomatis**! 🚀  
+
 ## **Kesimpulan**  
 Robot ini memiliki fitur lengkap untuk **profit maksimal & risiko minimal**, dengan **konfirmasi multi-timeframe, money management canggih, stop loss dinamis, dan AI prediksi tren**.  
 
